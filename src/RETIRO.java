@@ -20,6 +20,7 @@ public class RETIRO extends SALDO{
     public JLabel valor_retiro;
     private JLabel simbolo;
     public float retiro;
+    public float saldo_1;
 
     public RETIRO() {
         boton_regresar.addActionListener(new ActionListener() {
@@ -128,14 +129,22 @@ public class RETIRO extends SALDO{
                 String texto_pantalla = valor_retiro.getText();
                 String valores = texto_pantalla;
                 float retiro = Float.parseFloat(valores);
-
                 String saldo="200";
                 valor_saldo.setText(saldo);
                 float saldo_nuevo= Float.parseFloat(saldo);
-                saldo_nuevo=saldo_nuevo-retiro;
-                String saldo_1= String.valueOf(saldo_nuevo);
-                valor_saldo.setText(saldo_1);
 
+                if (retiro<saldo_nuevo){
+
+                    saldo_nuevo=saldo_nuevo-retiro;
+                    String saldo_1= String.valueOf(saldo_nuevo);
+                    MENU.frame_3.dispose();
+                    //valor_saldo.setText(saldo_1);
+
+                }else {
+                    JOptionPane.showMessageDialog(null, "SALDO INSUFICIENTE");
+                    MENU.frame_3.dispose();
+                    LOGIN.frame_2.dispose();
+                }
 
             }
         });

@@ -20,19 +20,16 @@ public class SALDO {
             }
 
         });
-                //valor_saldo.setText(saldo);
 
+
+        boton_actualizar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String saldo="300";
+                valor_saldo.setText(saldo);
+
+            }
+        });
     }
 
-
-    //retirar
-    /*public void saldo_actulizado(){
-        String saldo = "200";
-        valor_saldo.setText(saldo);
-        float saldo_1 = Float.parseFloat(saldo);
-
-        if (){
-            saldo_1=saldo_1-retiro;
-        }
-    }*/
 }

@@ -19,6 +19,7 @@ public class DEPOSITO extends SALDO{
     private JButton boton_uno;
     private JButton boton_regresar;
     public float retiro;
+    public float saldo_1;
 
     public DEPOSITO() {
         boton_regresar.addActionListener(new ActionListener() {
@@ -137,7 +138,8 @@ public class DEPOSITO extends SALDO{
                 float saldo_nuevo= Float.parseFloat(saldo);
                 saldo_nuevo=saldo_nuevo+deposito;
                 String saldo_1= String.valueOf(saldo_nuevo);
-                valor_saldo.setText(saldo_1);
+                //valor_saldo.setText(saldo_1);
+                MENU.frame_3.dispose();
 
                 //System.out.println("w");
                     /*try {
