@@ -17,18 +17,21 @@ public class MENU extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                LOGIN.frame_2.dispose();
                 frame_3.setUndecorated (true);
                 frame_3.setContentPane(new SALDO().panel_saldo);
                 frame_3.setSize(400,200);
                 frame_3.setLocationRelativeTo(null);
                 frame_3.pack();
-                frame_3.setVisible(true);;
+                frame_3.setVisible(true);
             }
         });
 
         boton_retiro.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
+                LOGIN.frame_2.dispose();
                 frame_3.setUndecorated (true);
                 frame_3.setContentPane(new RETIRO().panel_retiro);
                 frame_3.setSize(400,200);
@@ -40,12 +43,15 @@ public class MENU extends JFrame{
         boton_deposito.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
+                LOGIN.frame_2.dispose();
                 frame_3.setUndecorated (true);
                 frame_3.setContentPane(new DEPOSITO().panel_deposito);
                 frame_3.setSize(400,200);
                 frame_3.setLocationRelativeTo(null);
                 frame_3.pack();
                 frame_3.setVisible(true);
+
             }
         });
     }

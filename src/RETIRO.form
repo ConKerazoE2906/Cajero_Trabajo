@@ -3,19 +3,14 @@
   <grid id="27dc6" binding="panel_retiro" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="true" same-size-vertically="true" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="653" height="517"/>
+      <xy x="20" y="20" width="653" height="647"/>
     </constraints>
     <properties>
-      <background color="-1725376"/>
+      <background color="-10123624"/>
       <preferredSize width="600" height="300"/>
     </properties>
     <border type="none"/>
     <children>
-      <vspacer id="cc986">
-        <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </vspacer>
       <vspacer id="40edd">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
@@ -103,7 +98,7 @@
       </component>
       <component id="7352e" class="javax.swing.JButton" binding="boton_validar">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="VALIDAR"/>
@@ -119,7 +114,7 @@
           <text value="RETIRO"/>
         </properties>
       </component>
-      <component id="ceebb" class="javax.swing.JLabel">
+      <component id="ceebb" class="javax.swing.JLabel" binding="valor_retiro">
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -127,6 +122,24 @@
           <font name="Arial Black" size="24" style="0"/>
           <foreground color="-16053493"/>
           <text value=""/>
+        </properties>
+      </component>
+      <component id="78e0" class="javax.swing.JButton" binding="boton_regresar">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="REGERESAR"/>
+        </properties>
+      </component>
+      <component id="10fd9" class="javax.swing.JLabel" binding="simbolo">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial Black" size="24" style="0"/>
+          <foreground color="-16053493"/>
+          <text value="$"/>
         </properties>
       </component>
     </children>
