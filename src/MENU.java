@@ -57,8 +57,10 @@ public class MENU extends JFrame{
         boton_salir.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 MENU.frame_3.dispose();
                 LOGIN.frame_2.dispose();
+
             }
         });
     }

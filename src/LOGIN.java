@@ -18,6 +18,7 @@ public class LOGIN extends JFrame {
     private JLabel texto;
     private JLabel numeros_pantalla;
     private JButton boton_salir;
+    private JPasswordField password;
     static JFrame frame_2 = new JFrame();
 
     public LOGIN() {
@@ -26,36 +27,36 @@ public class LOGIN extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String numero="0";
-                String texto_pantalla = numeros_pantalla.getText();
+                String texto_pantalla = password.getText();
                 String valores = texto_pantalla + numero;
-                numeros_pantalla.setText(valores);
+                password.setText(valores);
             }
         });
         boton_uno.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String numero="1";
-                String texto_pantalla = numeros_pantalla.getText();
+                String texto_pantalla = password.getText();
                 String valores = texto_pantalla + numero;
-                numeros_pantalla.setText(valores);
+                password.setText(valores);
             }
         });
         boton_dos.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String numero="2";
-                String texto_pantalla = numeros_pantalla.getText();
+                String texto_pantalla = password.getText();
                 String valores = texto_pantalla + numero;
-                numeros_pantalla.setText(valores);
+                password.setText(valores);
             }
         });
         boton_tres.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String numero="3";
-                String texto_pantalla = numeros_pantalla.getText();
+                String texto_pantalla = password.getText();
                 String valores = texto_pantalla + numero;
-                numeros_pantalla.setText(valores);
+                password.setText(valores);
             }
         });
 
@@ -63,54 +64,54 @@ public class LOGIN extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String numero="4";
-                String texto_pantalla = numeros_pantalla.getText();
+                String texto_pantalla = password.getText();
                 String valores = texto_pantalla + numero;
-                numeros_pantalla.setText(valores);
+                password.setText(valores);
             }
         });
         boton_cinco.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String numero="5";
-                String texto_pantalla = numeros_pantalla.getText();
+                String texto_pantalla = password.getText();
                 String valores = texto_pantalla + numero;
-                numeros_pantalla.setText(valores);
+                password.setText(valores);
             }
         });
         boton_seis.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String numero="6";
-                String texto_pantalla = numeros_pantalla.getText();
+                String texto_pantalla = password.getText();
                 String valores = texto_pantalla + numero;
-                numeros_pantalla.setText(valores);
+                password.setText(valores);
             }
         });
         boton_siete.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String numero="7";
-                String texto_pantalla = numeros_pantalla.getText();
+                String texto_pantalla = password.getText();
                 String valores = texto_pantalla + numero;
-                numeros_pantalla.setText(valores);
+                password.setText(valores);
             }
         });
         boton_ocho.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String numero="8";
-                String texto_pantalla = numeros_pantalla.getText();
+                String texto_pantalla = password.getText();
                 String valores = texto_pantalla + numero;
-                numeros_pantalla.setText(valores);
+                password.setText(valores);
             }
         });
         boton_nueve.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String numero="9";
-                String texto_pantalla = numeros_pantalla.getText();
+                String texto_pantalla = password.getText();
                 String valores = texto_pantalla + numero;
-                numeros_pantalla.setText(valores);
+                password.setText(valores);
             }
         });
         boton_salir.addActionListener(new ActionListener() {
@@ -125,8 +126,8 @@ public class LOGIN extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                String clave_ingreso = "122928";
-                String texto_pantalla = numeros_pantalla.getText();
+                String clave_ingreso = "1234";
+                String texto_pantalla = password.getText();
                 String valores = texto_pantalla;
 
                 try{
