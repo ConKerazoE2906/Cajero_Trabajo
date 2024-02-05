@@ -13,10 +13,10 @@ public class SALDO {
         boton_menu.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                VOLVER_MENU regresar = new VOLVER_MENU();
-                regresar.volver_menu();
-                //MENU.frame_3.dispose();
-
+                /*VOLVER_MENU regresar = new VOLVER_MENU();
+                regresar.volver_menu();*/
+                MENU.frame_3.dispose();
+                LOGIN.frame_2.setVisible(true);
             }
 
         });
@@ -28,8 +28,10 @@ public class SALDO {
                 String saldo="300";
                 valor_saldo.setText(saldo);
 
+
             }
         });
     }
+
 
 }

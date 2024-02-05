@@ -27,8 +27,10 @@ public class RETIRO extends SALDO{
             @Override
             public void actionPerformed(ActionEvent e) {
                 //MENU.frame_3.dispose();
-                VOLVER_MENU regresar = new VOLVER_MENU();
-                regresar.volver_menu();
+                /*VOLVER_MENU regresar = new VOLVER_MENU();
+                regresar.volver_menu();*/
+                MENU.frame_3.dispose();
+                LOGIN.frame_2.setVisible(true);
             }
         });
         boton_cero.addActionListener(new ActionListener() {

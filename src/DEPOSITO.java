@@ -25,8 +25,10 @@ public class DEPOSITO extends SALDO{
         boton_regresar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                VOLVER_MENU regresar = new VOLVER_MENU();
-                regresar.volver_menu();
+                /*VOLVER_MENU regresar = new VOLVER_MENU();
+                regresar.volver_menu();*/
+                MENU.frame_3.dispose();
+                LOGIN.frame_2.setVisible(true);
                 //MENU.frame_3.dispose();
             }
         });
