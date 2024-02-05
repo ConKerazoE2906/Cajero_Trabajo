@@ -131,22 +131,17 @@ public class RETIRO extends SALDO{
                 String texto_pantalla = valor_retiro.getText();
                 String valores = texto_pantalla;
                 float retiro = Float.parseFloat(valores);
-                String saldo="200";
-                valor_saldo.setText(saldo);
-                float saldo_nuevo= Float.parseFloat(saldo);
 
-                if (retiro<saldo_nuevo){
-
-                    saldo_nuevo=saldo_nuevo-retiro;
-                    String saldo_1= String.valueOf(saldo_nuevo);
+                if (retiro<saldo){
+                    saldo=saldo-retiro;
+                    String saldo_1= String.valueOf(saldo);
                     MENU.frame_3.dispose();
                     LOGIN.frame_2.setVisible(true);
-                    //valor_saldo.setText(saldo_1);
 
                 }else {
                     JOptionPane.showMessageDialog(null, "SALDO INSUFICIENTE");
                     MENU.frame_3.dispose();
-                    LOGIN.frame_2.dispose();
+                    LOGIN.frame_2.setVisible(true);
                 }
 
             }

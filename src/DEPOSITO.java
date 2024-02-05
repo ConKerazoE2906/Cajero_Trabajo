@@ -135,29 +135,10 @@ public class DEPOSITO extends SALDO{
                 String valores = texto_pantalla;
                 float deposito = Float.parseFloat(valores);
 
-                String saldo="200";
-                valor_saldo.setText(saldo);
-                float saldo_nuevo= Float.parseFloat(saldo);
-                saldo_nuevo=saldo_nuevo+deposito;
-                String saldo_1= String.valueOf(saldo_nuevo);
+                saldo=saldo+deposito;
+                String saldo_1= String.valueOf(saldo);
                 MENU.frame_3.dispose();
                 LOGIN.frame_2.setVisible(true);
-                //valor_saldo.setText(saldo_1);
-
-
-                //System.out.println("w");
-                    /*try {
-                        if (retiro>saldo_nuevo){
-                            JOptionPane.showMessageDialog(null, "SALDO INSUFICIENTE");
-                        }
-                        else {
-                            saldo_nuevo=saldo_nuevo-retiro;
-                            String saldo_actualizado= String.valueOf(saldo_nuevo);
-                            valor_saldo.setText(saldo_actualizado);
-                        }
-                    }catch (Exception ex){
-                        System.out.println(ex);
-                    }*/
 
             }
         });

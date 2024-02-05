@@ -9,6 +9,7 @@ public class SALDO {
     public JLabel valor_saldo;
     private JButton boton_actualizar;
 
+    static float saldo=0;
     public SALDO() {
         boton_menu.addActionListener(new ActionListener() {
             @Override
@@ -25,8 +26,8 @@ public class SALDO {
         boton_actualizar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String saldo="300";
-                valor_saldo.setText(saldo);
+                valor_saldo.setText(String.valueOf(saldo));
+
 
 
             }
