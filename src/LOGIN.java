@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class form1 extends JFrame {
+public class LOGIN extends JFrame {
     javax.swing.JPanel panel_login;
     private JButton boton_siete;
     private JButton boton_ocho;
@@ -18,21 +18,21 @@ public class form1 extends JFrame {
     private JLabel texto;
     private JLabel numeros_pantalla;
 
-    public form1() {
+    public LOGIN() {
         boton_cero.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String texto_pantalla = numeros_pantalla.getText();
+                /*String texto_pantalla = numeros_pantalla.getText();
                 String valores = numeros_pantalla + "0";
-                numeros_pantalla.setText(valores);
+                numeros_pantalla.setText(valores);*/
             }
         });
         boton_uno.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String texto_pantalla = numeros_pantalla.getText();
+                /*String texto_pantalla = numeros_pantalla.getText();
                 String valores = numeros_pantalla + "1";
-                numeros_pantalla.setText(valores);
+                numeros_pantalla.setText(valores);*/
             }
         });
     }
