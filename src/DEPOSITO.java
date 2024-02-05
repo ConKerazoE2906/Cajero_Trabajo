@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class DEPOSITO {
+public class DEPOSITO extends SALDO{
     JPanel panel_deposito;
     private JLabel texto;
     private JButton boton_siete;
@@ -18,14 +18,15 @@ public class DEPOSITO {
     private JButton boton_cero;
     private JButton boton_uno;
     private JButton boton_regresar;
+    public float retiro;
 
     public DEPOSITO() {
         boton_regresar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                /*VOLVER_MENU regresar = new VOLVER_MENU();
-                regresar.volver_menu();*/
-                MENU.frame_3.dispose();
+                VOLVER_MENU regresar = new VOLVER_MENU();
+                regresar.volver_menu();
+                //MENU.frame_3.dispose();
             }
         });
 
@@ -122,23 +123,38 @@ public class DEPOSITO {
                 valor_deposito.setText(valores);
             }
         });
+
         boton_validar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String texto_pantalla = valor_deposito.getText();
-                //Este valor se suma al saldo
-                String valores = texto_pantalla;
-            }
-        });
-        boton_validar.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+
                 String texto_pantalla = valor_deposito.getText();
                 String valores = texto_pantalla;
-                float retiro = Float.parseFloat(valores);
-                System.out.println(1+retiro);
+                float deposito = Float.parseFloat(valores);
+
+                String saldo="200";
+                valor_saldo.setText(saldo);
+                float saldo_nuevo= Float.parseFloat(saldo);
+                saldo_nuevo=saldo_nuevo+deposito;
+                String saldo_1= String.valueOf(saldo_nuevo);
+                valor_saldo.setText(saldo_1);
+
+                //System.out.println("w");
+                    /*try {
+                        if (retiro>saldo_nuevo){
+                            JOptionPane.showMessageDialog(null, "SALDO INSUFICIENTE");
+                        }
+                        else {
+                            saldo_nuevo=saldo_nuevo-retiro;
+                            String saldo_actualizado= String.valueOf(saldo_nuevo);
+                            valor_saldo.setText(saldo_actualizado);
+                        }
+                    }catch (Exception ex){
+                        System.out.println(ex);
+                    }*/
 
             }
         });
     }
+
 }

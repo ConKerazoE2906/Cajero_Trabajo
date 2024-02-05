@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class RETIRO {
+public class RETIRO extends SALDO{
     JPanel panel_retiro;
     private JButton boton_siete;
     private JButton boton_ocho;
@@ -17,16 +17,17 @@ public class RETIRO {
     private JButton boton_validar;
     private JLabel texto;
     private JButton boton_regresar;
-    private JLabel valor_retiro;
+    public JLabel valor_retiro;
     private JLabel simbolo;
+    public float retiro;
 
     public RETIRO() {
         boton_regresar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                MENU.frame_3.dispose();
-                /*VOLVER_MENU regresar = new VOLVER_MENU();
-                regresar.volver_menu();*/
+                //MENU.frame_3.dispose();
+                VOLVER_MENU regresar = new VOLVER_MENU();
+                regresar.volver_menu();
             }
         });
         boton_cero.addActionListener(new ActionListener() {
@@ -126,10 +127,19 @@ public class RETIRO {
             public void actionPerformed(ActionEvent e) {
                 String texto_pantalla = valor_retiro.getText();
                 String valores = texto_pantalla;
-
                 float retiro = Float.parseFloat(valores);
+
+                String saldo="200";
+                valor_saldo.setText(saldo);
+                float saldo_nuevo= Float.parseFloat(saldo);
+                saldo_nuevo=saldo_nuevo-retiro;
+                String saldo_1= String.valueOf(saldo_nuevo);
+                valor_saldo.setText(saldo_1);
+
 
             }
         });
+
     }
+
 }
