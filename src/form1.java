@@ -3,30 +3,36 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class form1 extends JFrame {
-    private JPanel Panel1;
-    private JTextField userF;
-    private JPasswordField passwordFl;
-    private JButton LOGINButton;
+    javax.swing.JPanel panel_login;
+    private JButton boton_siete;
+    private JButton boton_ocho;
+    private JButton boton_nueve;
+    private JButton boton_cinco;
+    private JButton boton_seis;
+    private JButton boton_uno;
+    private JButton boton_dos;
+    private JButton boton_tres;
+    private JButton boton_cuatro;
+    private JButton boton_validar;
+    private JButton boton_cero;
+    private JLabel texto;
+    private JLabel numeros_pantalla;
 
     public form1() {
-        super("Login");
-        setContentPane(Panel1);
-        LOGINButton.addActionListener(new ActionListener() {
+        boton_cero.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String user= userF.getText();
-                String password= passwordFl.getText();
-                if (user.equals("emilio") && password.equals("12345")){
-                    JOptionPane.showMessageDialog(form1.this,"Bienvenido al programa");
-                    form2 menu=new form2();
-                    menu.setSize(400,400);
-                    menu.setVisible(true);
-                    menu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    dispose();
-                }else{
-                    JOptionPane.showMessageDialog(form1.this,"User or password incorrect");
-                }
-
+                String texto_pantalla = numeros_pantalla.getText();
+                String valores = numeros_pantalla + "0";
+                numeros_pantalla.setText(valores);
+            }
+        });
+        boton_uno.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String texto_pantalla = numeros_pantalla.getText();
+                String valores = numeros_pantalla + "1";
+                numeros_pantalla.setText(valores);
             }
         });
     }

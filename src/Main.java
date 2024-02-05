@@ -2,11 +2,15 @@ import javax.swing.*;
 
 public class Main {
 
+    static JFrame frame = new JFrame();
     public static void main(String[] args) {
-        form1 login =new form1();
-        login.setVisible(true);
-        login.setSize(400,400);
-        login.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        frame.setUndecorated (true);
+        frame.setContentPane(new form1().panel_login);
+        frame.setSize(400,200);
+        frame.setLocationRelativeTo(null);
+        frame.pack();
+        frame.setVisible(true);
 
 
     }
