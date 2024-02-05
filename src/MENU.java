@@ -3,7 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MENU extends JFrame{
-    private JPanel panel_menu;
+    JPanel panel_menu;
     private JLabel taxto;
     private JRadioButton boton_ver_saldo;
     private JRadioButton boton_deposito;

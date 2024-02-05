@@ -18,6 +18,7 @@ public class LOGIN extends JFrame {
     private JLabel texto;
     private JLabel numeros_pantalla;
     private JButton boton_salir;
+    static JFrame frame_2 = new JFrame();
 
     public LOGIN() {
 
@@ -128,14 +129,27 @@ public class LOGIN extends JFrame {
                 String texto_pantalla = numeros_pantalla.getText();
                 String valores = texto_pantalla;
 
-                if (clave_ingreso.equals(valores)){
-                    System.out.println("hola");
-                }
-                else {
-                    JOptionPane.showMessageDialog(null, "CREDENCIALES INCORRECTAS");
-                    Main.frame.dispose();
-                    System.out.println("adios");
+                try{
+                    if (clave_ingreso.equals(valores)){
 
+                        Main.frame.dispose();
+                        frame_2.setUndecorated (true);
+                        frame_2.setContentPane(new MENU().panel_menu);
+                        frame_2.setSize(400,200);
+                        frame_2.setLocationRelativeTo(null);
+                        frame_2.pack();
+                        frame_2.setVisible(true);
+                        //System.out.println("hola");
+                    }
+                    else {
+                        JOptionPane.showMessageDialog(null, "CREDENCIALES INCORRECTAS");
+                        Main.frame.dispose();
+                        //System.out.println("adios");
+
+                    }
+
+                } catch (Exception ex){
+                    System.out.println(ex);
                 }
             }
         });
