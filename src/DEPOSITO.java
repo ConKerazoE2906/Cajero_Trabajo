@@ -140,8 +140,10 @@ public class DEPOSITO extends SALDO{
                 float saldo_nuevo= Float.parseFloat(saldo);
                 saldo_nuevo=saldo_nuevo+deposito;
                 String saldo_1= String.valueOf(saldo_nuevo);
-                //valor_saldo.setText(saldo_1);
                 MENU.frame_3.dispose();
+                LOGIN.frame_2.setVisible(true);
+                //valor_saldo.setText(saldo_1);
+
 
                 //System.out.println("w");
                     /*try {

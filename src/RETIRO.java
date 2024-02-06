@@ -140,6 +140,7 @@ public class RETIRO extends SALDO{
                     saldo_nuevo=saldo_nuevo-retiro;
                     String saldo_1= String.valueOf(saldo_nuevo);
                     MENU.frame_3.dispose();
+                    LOGIN.frame_2.setVisible(true);
                     //valor_saldo.setText(saldo_1);
 
                 }else {
